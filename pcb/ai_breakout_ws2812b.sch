@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,20 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -698,7 +712,7 @@ chip</description>
 <instance part="RGB" gate="G$1" x="142.24" y="106.68"/>
 <instance part="C1" gate="G$1" x="100.33" y="105.41"/>
 <instance part="U$1" gate="1" x="100.33" y="113.03"/>
-<instance part="GND1" gate="GND" x="100.33" y="97.79"/>
+<instance part="GND1" gate="GND" x="100.33" y="95.25"/>
 <instance part="GND2" gate="GND" x="125.73" y="97.79"/>
 <instance part="U$2" gate="1" x="125.73" y="113.03"/>
 <instance part="IN" gate="G$1" x="118.11" y="80.01" rot="MR0"/>
@@ -740,6 +754,7 @@ chip</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
+<wire x1="100.33" y1="97.79" x2="100.33" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="GND" pin="GND"/>
@@ -764,24 +779,24 @@ chip</description>
 <segment>
 <pinref part="RGB" gate="G$1" pin="DI"/>
 <wire x1="156.21" y1="110.49" x2="158.75" y2="110.49" width="0.1524" layer="91"/>
-<label x="158.75" y="110.49" size="1.27" layer="95" ratio="15" xref="yes"/>
+<label x="158.75" y="110.49" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="G$1" pin="2"/>
 <wire x1="113.03" y1="80.01" x2="110.49" y2="80.01" width="0.1524" layer="91"/>
-<label x="110.49" y="80.01" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
+<label x="110.49" y="80.01" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DO" class="0">
 <segment>
 <pinref part="RGB" gate="G$1" pin="DO"/>
 <wire x1="156.21" y1="102.87" x2="158.75" y2="102.87" width="0.1524" layer="91"/>
-<label x="158.75" y="102.87" size="1.27" layer="95" ratio="15" xref="yes"/>
+<label x="158.75" y="102.87" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="G$1" pin="2"/>
 <wire x1="140.97" y1="80.01" x2="143.51" y2="80.01" width="0.1524" layer="91"/>
-<label x="143.51" y="80.01" size="1.27" layer="95" ratio="15" xref="yes"/>
+<label x="143.51" y="80.01" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 </nets>
